@@ -1,6 +1,6 @@
 # Skin neoplasm classification with ResNet50! (PyTorch)
 ####
-## The data set is __[Skin Cancer MNIST: HAM10000 from Kaggle](https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000)__.
+## The dataset is __[Skin Cancer MNIST: HAM10000 from Kaggle](https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000)__.
 ## Was built in __[Google Colab](https://colab.research.google.com/)__ environment, so make any adjustments needed for it to work on your machine.
 ## You can find code and detailed project analysis in __[Skin_classifier.ipynb](https://github.com/NikitaBezukhov/Skin-neoplasm-classifier/blob/main/Skin_classifier.ipynb)__ notebook.
 ## The results of the training will be presented below.
@@ -17,7 +17,7 @@
 ![Train_results](https://user-images.githubusercontent.com/74721678/125439228-13fbbeea-8081-43e8-8a5e-7919460088a0.png)
 ![Tensor_board_curves](https://user-images.githubusercontent.com/74721678/125439235-2e1a0228-84e7-49e2-b021-b16227857e04.png)
 ![Metrics_1](https://user-images.githubusercontent.com/74721678/125443558-b572f2af-0df7-4e48-a32a-900bb733e378.png)
-### For better validation robustness I spined validation data 5 times with random Horizontal flip (50% chance) and random Rotation (-180,180, 99% chance) and got next metrics:
+### For better validation robustness I spinned validation data 5 times with random Horizontal flip (50% chance) and random Rotation (-180,180, 99% chance) and got next metrics:
 ![Metrics_2](https://user-images.githubusercontent.com/74721678/125444128-a0352855-0d4f-49d6-8b27-5e12279796ed.png)
 ## In the end we were able to achieve 97% average F1 score with all by class AUCs close to 100%! 
 ## And what is interesting, even on 2 classes with smallest representations (only 78 and 58 training images) we still were able to achieve 100 and 99% F1 score respectively.
